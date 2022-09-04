@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/hesse/Dokumente/KiCad/Projekte/Privat/MateLightScrewCap/MateLightScrewCap.sch</source>
+    <date>Mi 09 Dez 2020 09:37:47 CET</date>
+    <tool>Eeschema 5.1.8-db9833491~88~ubuntu20.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>MateLightScrewCap</title>
+        <company>HansAchterbahn @ Neotopia / CCC Göttingen</company>
+        <rev>v0.1.0</rev>
+        <date>2019-10-31</date>
+        <source>MateLightScrewCap.sch</source>
+        <comment number="1" value="Licence: MIT Licence"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value="I_APA102 = max. 20 mA @ 5V"/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="LD1">
+      <value>APA102</value>
+      <footprint>MateLightScrewCap:APA102C-5050</footprint>
+      <libsource lib="MateLightScrewCap-eagle-import" part="APA102C-5050" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>460176CA</tstamp>
+    </comp>
+    <comp ref="X1">
+      <value>S4B-PH-SM4</value>
+      <footprint>MateLightScrewCap:JST_S4B-PH-SM4-TB</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>93BFB180</tstamp>
+    </comp>
+    <comp ref="X2">
+      <value>S4B-PH-SM4</value>
+      <footprint>MateLightScrewCap:JST_S4B-PH-SM4-TB</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>3B7D1BA6</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector_Generic" part="Conn_01x04">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MateLightScrewCap-eagle-import" part="APA102C-5050">
+      <fields>
+        <field name="Reference">LD</field>
+        <field name="Value">APA102C-5050</field>
+        <field name="Footprint">MateLightScrewCap:APA102C-5050</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SDI" type="input"/>
+        <pin num="2" name="CKI" type="input"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="SDO" type="output"/>
+        <pin num="5" name="CKO" type="output"/>
+        <pin num="6" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector_Generic">
+      <uri>/usr/share/kicad/library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="MateLightScrewCap-eagle-import">
+      <uri>/home/hesse/Dokumente/KiCad/Projekte/Privat/MateLightScrewCap/MateLightScrewCap-eagle-import.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="GND">
+      <node ref="LD1" pin="3"/>
+      <node ref="X2" pin="3"/>
+      <node ref="X1" pin="2"/>
+    </net>
+    <net code="2" name="+5V">
+      <node ref="LD1" pin="6"/>
+      <node ref="X2" pin="4"/>
+      <node ref="X1" pin="1"/>
+    </net>
+    <net code="3" name="Net-(LD1-Pad2)">
+      <node ref="X1" pin="3"/>
+      <node ref="LD1" pin="2"/>
+    </net>
+    <net code="4" name="Net-(LD1-Pad1)">
+      <node ref="X1" pin="4"/>
+      <node ref="LD1" pin="1"/>
+    </net>
+    <net code="5" name="Net-(LD1-Pad4)">
+      <node ref="LD1" pin="4"/>
+      <node ref="X2" pin="1"/>
+    </net>
+    <net code="6" name="Net-(LD1-Pad5)">
+      <node ref="LD1" pin="5"/>
+      <node ref="X2" pin="2"/>
+    </net>
+  </nets>
+</export>
