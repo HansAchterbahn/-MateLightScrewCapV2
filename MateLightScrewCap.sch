@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "MateLightScrewCap"
-Date "2019-10-31"
-Rev "v0.1.0"
+Title "MateLightScrewCapV2"
+Date "2022-09-05"
+Rev "v0.2.0"
 Comp "HansAchterbahn @ Neotopia / CCC Göttingen"
 Comment1 "Licence: MIT Licence"
 Comment2 ""
@@ -63,44 +63,44 @@ F 3 "" H 6450 3650 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Notes 600  7650 0    100  ~ 0
-It is permitted to operate 20 of these modules in series \nwith a 5V/1.4A power supply. After 20 modules an\nadditional 5V/1.4A power supply is required. \n\nThe reason for this is not only the required current, \nbut also the wire resistance is a major issue with \nthese connectors. 
+It is permitted to use a 5V/0.07A power supply for \neach PCB. \n\nThe reason for a seperate power connector for every\nsingle PCB is the wire resistance. This is a major issue. 
 $Comp
 L power:GND #GND02
 U 1 1 13A376EC
-P 4500 3200
-F 0 "#GND02" H 4500 3200 50  0001 C CNN
-F 1 "GND" H 4400 3100 59  0000 C BNN
-F 2 "" H 4500 3200 50  0001 C CNN
-F 3 "" H 4500 3200 50  0001 C CNN
-	1    4500 3200
+P 5000 3350
+F 0 "#GND02" H 5000 3350 50  0001 C CNN
+F 1 "GND" H 4900 3250 59  0000 C BNN
+F 2 "" H 5000 3350 50  0001 C CNN
+F 3 "" H 5000 3350 50  0001 C CNN
+	1    5000 3350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 3000 4500 2900
+	5000 3150 5000 3050
 $Comp
 L power:+5V #P+03
 U 1 1 00F05DF6
-P 4500 2900
-F 0 "#P+03" H 4500 2900 50  0001 C CNN
-F 1 "+5V" V 4350 3000 59  0000 R TNN
-F 2 "" H 4500 2900 50  0001 C CNN
-F 3 "" H 4500 2900 50  0001 C CNN
-	1    4500 2900
+P 5000 3050
+F 0 "#P+03" H 5000 3050 50  0001 C CNN
+F 1 "+5V" V 4850 3150 59  0000 R TNN
+F 2 "" H 5000 3050 50  0001 C CNN
+F 3 "" H 5000 3050 50  0001 C CNN
+	1    5000 3050
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 3200 4500 3100
+	5000 3350 5000 3250
 Wire Wire Line
-	3950 3100 4500 3100
+	4450 3250 5000 3250
 $Comp
 L Connector_Generic:Conn_01x02 X3
 U 1 1 631B9574
-P 3750 3100
-F 0 "X3" H 3668 2775 50  0000 C CNN
-F 1 "Power" H 3668 2866 50  0000 C CNN
-F 2 "h8-Connectors:JST_S2B-PH-SM4-TB(LF)(SN)" H 3750 3100 50  0001 C CNN
-F 3 "~" H 3750 3100 50  0001 C CNN
-	1    3750 3100
+P 4250 3250
+F 0 "X3" H 4168 2925 50  0000 C CNN
+F 1 "Power" H 4168 3016 50  0000 C CNN
+F 2 "h8-Connectors:JST_S2B-PH-SM4-TB(LF)(SN)" H 4250 3250 50  0001 C CNN
+F 3 "~" H 4250 3250 50  0001 C CNN
+	1    4250 3250
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -136,20 +136,20 @@ SDO
 $Comp
 L Connector_Generic:Conn_01x02 X4
 U 1 1 631D1424
-P 3250 3100
-F 0 "X4" H 3168 2775 50  0000 C CNN
-F 1 "Power" H 3168 2866 50  0000 C CNN
-F 2 "h8-Connectors:JST_S2B-ZR-SM4A-TF(LF)(SN)" H 3250 3100 50  0001 C CNN
-F 3 "~" H 3250 3100 50  0001 C CNN
-	1    3250 3100
+P 3750 3250
+F 0 "X4" H 3668 2925 50  0000 C CNN
+F 1 "Power" H 3668 3016 50  0000 C CNN
+F 2 "h8-Connectors:JST_S2B-ZR-SM4A-TF(LF)(SN)" H 3750 3250 50  0001 C CNN
+F 3 "~" H 3750 3250 50  0001 C CNN
+	1    3750 3250
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3450 3000 3950 3000
-Connection ~ 3950 3000
+	3950 3150 4450 3150
+Connection ~ 4450 3150
 Wire Wire Line
-	3950 3000 4500 3000
+	4450 3150 5000 3150
 Wire Wire Line
-	3450 3100 3950 3100
-Connection ~ 3950 3100
+	3950 3250 4450 3250
+Connection ~ 4450 3250
 $EndSCHEMATC

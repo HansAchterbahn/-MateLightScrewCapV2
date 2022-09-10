@@ -1,0 +1,15 @@
+Can not find model defined with enviroment variable:
+${KICAD_PROJECTS}/Libraries/h8/packages3d/S2B-ZR-SM4A-TF_LF__SN_.step
+Can not find model defined with enviroment variable:
+${KICAD_PROJECTS}/Libraries/h8/packages3d/S2B-ZR-SM4A-TF_LF__SN_.step
+Can not find model defined with enviroment variable:
+${KICAD_PROJECTS}/Libraries/h8/packages3d/S2B-ZR-SM4A-TF_LF__SN_.step
+Can not find model defined with enviroment variable:
+${KICAD_PROJECTS}/Libraries/h8/packages3d/S2B-PH-SM4-TB.stp
+Can not find model defined with enviroment variable:
+${KICAD_PROJECTS}/Libraries/h8/packages3d/S2B-PH-SM4-TB_LF__SN_.step
+Can not find model defined with enviroment variable (/usr/share/kicad/3dmodels/ :
+/home/hesse/Dokumente/KiCad/Libraries/h8/packages3d/APA102C.step
+Can not find model defined with enviroment variable:
+${KICAD_PROJECTS}/Libraries/h8/packages3d/APA102C.step
+[('X4', '${KICAD_PROJECTS}/Libraries/h8/packages3d/S2B-ZR-SM4A-TF_LF__SN_.step'), ('X1', '${KICAD_PROJECTS}/Libraries/h8/packages3d/S2B-ZR-SM4A-TF_LF__SN_.step'), ('X2', '${KICAD_PROJECTS}/Libraries/h8/packages3d/S2B-ZR-SM4A-TF_LF__SN_.step'), ('X3', '${KICAD_PROJECTS}/Libraries/h8/packages3d/S2B-PH-SM4-TB.stp'), ('X3', '${KICAD_PROJECTS}/Libraries/h8/packages3d/S2B-PH-SM4-TB_LF__SN_.step'), ('LD1', '/home/hesse/Dokumente/KiCad/Libraries/h8/packages3d/APA102C.step'), ('LD1', '${KICAD_PROJECTS}/Libraries/h8/packages3d/APA102C.step')]

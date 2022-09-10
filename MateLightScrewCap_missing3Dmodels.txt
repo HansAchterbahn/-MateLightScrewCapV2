@@ -1,0 +1,16 @@
+### Missing 3D models - created on 2022-09-06 14:31
+### Printed by checking_3D_models plugin
+Board file: /home/mario/Dokumente/KiCad/Projekte/Privat/MateLightScrewCapV2/MateLightScrewCap.kicad_pcb
+3D missing models written to:
+/home/mario/Dokumente/KiCad/Projekte/Privat/MateLightScrewCapV2/MateLightScrewCap_missing3Dmodels.txt
+-------
+('X4', '${KICAD_PROJECTS}/Libraries/h8/packages3d/S2B-ZR-SM4A-TF_LF__SN_.step')
+('X1', '${KICAD_PROJECTS}/Libraries/h8/packages3d/S2B-ZR-SM4A-TF_LF__SN_.step')
+('X2', '${KICAD_PROJECTS}/Libraries/h8/packages3d/S2B-ZR-SM4A-TF_LF__SN_.step')
+('X3', '${KICAD_PROJECTS}/Libraries/h8/packages3d/S2B-PH-SM4-TB.stp')
+('X3', '${KICAD_PROJECTS}/Libraries/h8/packages3d/S2B-PH-SM4-TB_LF__SN_.step')
+('LD1', '/home/hesse/Dokumente/KiCad/Libraries/h8/packages3d/APA102C.step')
+('LD1', '${KICAD_PROJECTS}/Libraries/h8/packages3d/APA102C.step')
+-------
+NUM of 3D missing models:7
+checked extensions ['.stp', '.step', '.stpZ']

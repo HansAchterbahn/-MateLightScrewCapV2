@@ -63,7 +63,7 @@ F 3 "" H 6450 3650 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Notes 600  7650 0    100  ~ 0
-It is permitted to operate 20 of these modules in series \nwith a 5V/1.4A power supply. After 20 modules an\nadditional 5V/1.4A power supply is required. \n\nThe reason for this is not only the required current, \nbut also the wire resistance is a major issue with \nthese connectors. 
+It is permitted to use a 5V/0.07A power supply for \neach PCB. \n\nThe reason for a seperate power connector for every\nsingle PCB is the wire resistance. This is a major issue. 
 $Comp
 L power:GND #GND02
 U 1 1 13A376EC
@@ -97,7 +97,7 @@ L Connector_Generic:Conn_01x02 X3
 U 1 1 631B9574
 P 3750 3100
 F 0 "X3" H 3668 2775 50  0000 C CNN
-F 1 "Conn_01x02" H 3668 2866 50  0000 C CNN
+F 1 "Power" H 3668 2866 50  0000 C CNN
 F 2 "h8-Connectors:JST_S2B-PH-SM4-TB(LF)(SN)" H 3750 3100 50  0001 C CNN
 F 3 "~" H 3750 3100 50  0001 C CNN
 	1    3750 3100
@@ -107,8 +107,8 @@ $Comp
 L Connector_Generic:Conn_01x02 X1
 U 1 1 631BC84F
 P 3750 4050
-F 0 "X1" H 3668 3725 50  0000 C CNN
-F 1 "Conn_01x02" H 3668 3816 50  0000 C CNN
+F 0 "X1" H 3668 4267 50  0000 C CNN
+F 1 "IN" H 3668 4176 50  0000 C CNN
 F 2 "h8-Connectors:JST_S2B-ZR-SM4A-TF(LF)(SN)" H 3750 4050 50  0001 C CNN
 F 3 "~" H 3750 4050 50  0001 C CNN
 	1    3750 4050
@@ -118,8 +118,8 @@ $Comp
 L Connector_Generic:Conn_01x02 X2
 U 1 1 631BCF1A
 P 8150 4050
-F 0 "X2" H 8068 3725 50  0000 C CNN
-F 1 "Conn_01x02" H 8068 3816 50  0000 C CNN
+F 0 "X2" H 8230 4042 50  0000 L CNN
+F 1 "OUT" H 8230 3951 50  0000 L CNN
 F 2 "h8-Connectors:JST_S2B-ZR-SM4A-TF(LF)(SN)" H 8150 4050 50  0001 C CNN
 F 3 "~" H 8150 4050 50  0001 C CNN
 	1    8150 4050
@@ -138,7 +138,7 @@ L Connector_Generic:Conn_01x02 X4
 U 1 1 631D1424
 P 3250 3100
 F 0 "X4" H 3168 2775 50  0000 C CNN
-F 1 "Conn_01x02" H 3168 2866 50  0000 C CNN
+F 1 "Power" H 3168 2866 50  0000 C CNN
 F 2 "h8-Connectors:JST_S2B-ZR-SM4A-TF(LF)(SN)" H 3250 3100 50  0001 C CNN
 F 3 "~" H 3250 3100 50  0001 C CNN
 	1    3250 3100
