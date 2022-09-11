@@ -57,11 +57,11 @@
       (plotinvisibletext false)
       (sketchpadsonfab false)
       (subtractmaskfromsilk false)
-      (outputformat 3)
+      (outputformat 1)
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "Out/DXF/")
+      (outputdirectory "Out/Gerber/")
     )
   )
 
@@ -308,12 +308,12 @@
       (net 3 "/CKO") (pinfunction "CKO") (pintype "output") (solder_mask_margin 0.0508) (tstamp fb3bc56a-c4f8-401a-8f94-a5eb7bfac670))
     (pad "6" smd rect (at 2.45 -1.65 180) (size 1.6 1) (layers "B.Cu" "B.Paste" "B.Mask")
       (net 2 "+5V") (pinfunction "VDD") (pintype "power_in") (solder_mask_margin 0.0508) (tstamp f1cd01ea-3e43-40b6-ba0e-069b110519ec))
-    (model "/home/hesse/Dokumente/KiCad/Libraries/h8/packages3d/APA102C.step"
+    (model "${KIPRJMOD}/packages3D/APA102C.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "${KICAD_PROJECTS}/Libraries/h8/packages3d/APA102C.step"
+    (model "${KICAD_PROJECTS}/Libraries/h8/packages3d/APA102C.step" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
