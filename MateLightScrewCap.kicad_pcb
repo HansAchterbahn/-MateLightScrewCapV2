@@ -348,7 +348,7 @@
   (dimension (type aligned) (layer "Cmts.User") (tstamp 00000000-0000-0000-0000-00006314ab47)
     (pts (xy 12 0) (xy -12 0))
     (height -15)
-    (gr_text "24.0000 mm" (at 0 13.85) (layer "Cmts.User") (tstamp 00000000-0000-0000-0000-00006314ab47)
+    (gr_text "24,0000 mm" (at 0 13.85) (layer "Cmts.User") (tstamp 00000000-0000-0000-0000-00006314ab47)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (format (units 2) (units_format 1) (precision 4))
