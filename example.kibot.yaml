@@ -5,7 +5,7 @@ preflight:
   # [boolean=false] Zones are filled before doing any operation involving PCB layers
   check_zone_fills: true
   # [list(dict)] A list of entries to filter out ERC/DRC messages
-  filters: 
+  filters:
     - filter: 'Filter description'
       error: '10'
       regex: 'Regular expression to match'
@@ -31,7 +31,7 @@ outputs:
   - name: 'bom_example'
     comment: 'Used to generate the BoM in CSV, HTML, TSV, TXT, XML or XLSX format using the internal BoM.'
     type: 'bom'
-    dir: 'Example/bom_dir'
+    dir: 'Out/bom'
     options:
       # [list(dict)|list(string)] List of columns to display.
       # Can be just the name of the field
@@ -158,7 +158,7 @@ outputs:
   - name: 'dxf_example'
     comment: 'Exports the PCB to 2D mechanical EDA tools (like AutoCAD).'
     type: 'dxf'
-    dir: 'Example/dxf_dir'
+    dir: 'Out/DXF'
     options:
       # [string|list(string)=''] Name of the filter to mark components as not fitted.
       # A short-cut to use for simple cases where a variant is an overkill
@@ -232,7 +232,7 @@ outputs:
   - name: 'gerb_drill_example'
     comment: 'This is the information for the drilling machine in gerber format.'
     type: 'gerb_drill'
-    dir: 'Example/gerb_drill_dir'
+    dir: 'Out/Gerber'
     options:
       # [dict|string] [hpgl,ps,gerber,dxf,svg,pdf] format for a graphical drill map.
       # Not generated unless a format is specified
@@ -256,7 +256,7 @@ outputs:
   - name: 'gerber_example'
     comment: 'This is the main fabrication format for the PCB.'
     type: 'gerber'
-    dir: 'Example/gerber_dir'
+    dir: 'Out/Gerber'
     options:
       # [boolean=true] creates a file with information about all the generated gerbers.
       # You can use it in gerbview to load all gerbers at once
@@ -307,7 +307,7 @@ outputs:
   - name: 'hpgl_example'
     comment: 'Exports the PCB for plotters and laser printers.'
     type: 'hpgl'
-    dir: 'Example/hpgl_dir'
+    dir: 'Out/HPGL'
     options:
       # [string|list(string)=''] Name of the filter to mark components as not fitted.
       # A short-cut to use for simple cases where a variant is an overkill
@@ -352,7 +352,7 @@ outputs:
   - name: 'ibom_example'
     comment: 'Generates an interactive web page useful to identify the position of the components in the PCB.'
     type: 'ibom'
-    dir: 'Example/ibom_dir'
+    dir: 'Out/bom'
     options:
       # [string=''] List of comma separated blacklisted components or prefixes with *. E.g. 'X1,MH*'.
       # IBoM option, avoid using in conjunction with KiBot variants/filters
@@ -437,7 +437,7 @@ outputs:
   - name: 'kibom_example'
     comment: 'Used to generate the BoM in HTML or CSV format using the KiBoM plug-in.'
     type: 'kibom'
-    dir: 'Example/kibom_dir'
+    dir: 'Out/bom'
     options:
       # [string|dict] BoM configuration file, relative to PCB.
       # You can also define the configuration here, will be stored in `config.kibom.ini`
@@ -552,7 +552,7 @@ outputs:
   - name: 'pcbdraw_example'
     comment: 'Exports the PCB as a 2D model (SVG, PNG or JPG).'
     type: 'pcbdraw'
-    dir: 'Example/pcbdraw_dir'
+    dir: 'Out/PcbDraw'
     options:
       # [boolean=false] render the bottom side of the board (default is top side)
       bottom: false
@@ -615,7 +615,7 @@ outputs:
   - name: 'pdf_example'
     comment: 'Exports the PCB to the most common exhange format. Suitable for printing.'
     type: 'pdf'
-    dir: 'Example/pdf_dir'
+    dir: 'Out/PDF'
     options:
       # [string|list(string)=''] Name of the filter to mark components as not fitted.
       # A short-cut to use for simple cases where a variant is an overkill
@@ -654,7 +654,7 @@ outputs:
   - name: 'pdf_pcb_print_example'
     comment: 'Exports the PCB to the most common exhange format. Suitable for printing.'
     type: 'pdf_pcb_print'
-    dir: 'Example/pdf_pcb_print_dir'
+    dir: 'Out/PDF'
     options:
       # [string|list(string)=''] Name of the filter to mark components as not fitted.
       # A short-cut to use for simple cases where a variant is an overkill
@@ -684,7 +684,7 @@ outputs:
   - name: 'pdf_sch_print_example'
     comment: 'Exports the PCB to the most common exhange format. Suitable for printing.'
     type: 'pdf_sch_print'
-    dir: 'Example/pdf_sch_print_dir'
+    dir: 'Out/PDF'
     options:
       # [string|list(string)=''] Name of the filter to mark components as not fitted.
       # A short-cut to use for simple cases where a variant is an overkill
@@ -700,7 +700,7 @@ outputs:
   - name: 'position_example'
     comment: 'Generates the file with position information for the PCB components, used by the pick and place machine.'
     type: 'position'
-    dir: 'Example/position_dir'
+    dir: 'Out/Position'
     options:
       # [list(dict)|list(string)] which columns are included in the output
       columns:
@@ -729,7 +729,7 @@ outputs:
   - name: 'ps_example'
     comment: 'Exports the PCB to a format suitable for printing.'
     type: 'ps'
-    dir: 'Example/ps_dir'
+    dir: 'Out/PS'
     options:
       # [boolean=true] force A4 paper size
       a4_output: true
@@ -781,7 +781,7 @@ outputs:
   - name: 'sch_variant_example'
     comment: 'Creates a copy of the schematic with all the filters and variants applied.'
     type: 'sch_variant'
-    dir: 'Example/sch_variant_dir'
+    dir: 'Out/Variants'
     options:
       # [string|list(string)=''] Name of the filter to mark components as not fitted.
       # A short-cut to use for simple cases where a variant is an overkill
@@ -795,7 +795,7 @@ outputs:
   - name: 'step_example'
     comment: 'Exports the PCB as a 3D model.'
     type: 'step'
-    dir: 'Example/step_dir'
+    dir: 'Out/STEP'
     options:
       # [string|list(string)=''] Name of the filter to mark components as not fitted.
       # A short-cut to use for simple cases where a variant is an overkill
@@ -821,7 +821,7 @@ outputs:
   - name: 'svg_example'
     comment: 'Exports the PCB to a format suitable for 2D graphics software.'
     type: 'svg'
-    dir: 'Example/svg_dir'
+    dir: 'Out/SVG'
     options:
       # [string|list(string)=''] Name of the filter to mark components as not fitted.
       # A short-cut to use for simple cases where a variant is an overkill
@@ -859,7 +859,7 @@ outputs:
   - name: 'svg_sch_print_example'
     comment: 'Exports the PCB. Suitable for printing.'
     type: 'svg_sch_print'
-    dir: 'Example/svg_sch_print_dir'
+    dir: 'Out/SVG'
     options:
       # [string|list(string)=''] Name of the filter to mark components as not fitted.
       # A short-cut to use for simple cases where a variant is an overkill
@@ -869,4 +869,3 @@ outputs:
       # [string=''] Board variant to apply.
       # Not fitted components are crossed
       variant: ''
-
