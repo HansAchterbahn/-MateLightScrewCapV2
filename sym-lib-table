@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "MateLightScrewCap-eagle-import")(type "Legacy")(uri "${KIPRJMOD}/MateLightScrewCap-eagle-import.lib")(options "")(descr ""))
+  (lib (name "MateLightScrewCap-rescue")(type "Legacy")(uri "${KIPRJMOD}/MateLightScrewCap-rescue.lib")(options "")(descr ""))
+)
